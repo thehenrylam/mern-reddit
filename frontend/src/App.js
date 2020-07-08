@@ -21,6 +21,8 @@ import SearchResult from "./components/searchResult.component";
 import FollowingList from "./components/followingList.component";
 import FollowersList from "./components/followersList.component";
 
+import Test from "./components/test.component";
+
 import {
   MAIN_PAGE_ENDPOINT,
   REGISTER_PAGE_ENDPOINT,
@@ -70,6 +72,7 @@ class App extends Component {
               <Route exact path={PROFILESETTINGS_PAGE_ENDPOINT + ':id'} component={ProfileSettings} />
               <Route exact path={PROFILE_PAGE_ENDPOINT + ':id'} component={Profile} />
               <Route exact path={SEARCH_PAGE_ENDPOINT + ':searchTerm'} component={SearchResult} />
+              <Route path={"/test/"} component={Test} />
             </Switch>
           </div>
         </div>
